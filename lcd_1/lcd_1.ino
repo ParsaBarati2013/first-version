@@ -1,3 +1,4 @@
+int adad=Serial.available();
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
@@ -8,8 +9,9 @@ void setup() {
   lcd.clear();
   lcd.backlight();
   lcd.setCursor(1, 0);
-  lcd.print("Hello world!");
+  lcd.print(adad);
 }
 
 void loop() {
+
 }
